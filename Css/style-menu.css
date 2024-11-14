@@ -1,0 +1,106 @@
+:root {
+  --background-button: #22a2f2;
+  --background-header-footer: #204473;
+  --backgrund-border: #d9d9d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  background-color: var(--background-header-footer);
+  padding: 25px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  margin: 0 200px;
+}
+
+main {
+  background-image: url("../Img/logoMazda.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right;
+}
+
+.img__perfil {
+  width: 120px;
+  position: relative;
+  left: 40px;
+  bottom: 50px;
+}
+
+.img__logo {
+  width: 180px;
+  position: relative;
+  left: 60px;
+  bottom: 55px;
+}
+
+.img__section-messages {
+  width: 400px;
+  position: relative;
+  left: 0;
+  bottom: 20px;
+}
+
+.img__message {
+  width: 100px;
+  position: relative;
+  bottom: 10px;
+}
+
+.section__box {
+  position: absolute;
+  bottom: 100px;
+  left: 700px;
+  box-sizing: border-box;
+}
+
+.img__box {
+  width: 250px;
+}
+.section__box .img-codigo {
+  position: relative;
+  left: 509px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-header-footer);
+  padding: 15px;
+  color: white;
+}
+.footer__mensajeria {
+  margin-left: 20px;
+}
+
+.footer__server,
+.footer__status,
+.footer__ip {
+  margin: 0;
+}
+
+.footer .footer__server {
+  text-align: left;
+}
+
+.footer .footer__ip {
+  text-align: right;
+  margin-right: 40px;
+}
