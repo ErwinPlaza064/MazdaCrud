@@ -72,12 +72,12 @@
                 </tbody>
             </table>
                 <div class="box_vale">
-                    <img src="../Img/NuevoVale.png" class="img_vale" alt="">
-                    <button class="btn_vale"><img class="lupa" src="../Img/lupa.png" alt=""><span class="span_vale">Search</span></button>
+                    <img src="../Img/NuevoVale.png" class="img_vale">
+                    <button class="btn_vale"><img class="lupa" src="../Img/lupa.png"><span class="span_vale">Search</span></button>
                 </div>
                 <div class="box_section_2">
                     <img class="img_section-2" src="../Img/GuardarVale.png" alt="">
-                    <img class="img_section-2" src="../Img/ImprimirVale.png" alt="">
+                    <img id="imprimirVale" class="img_section-2" src="../Img/ImprimirVale.png">
                 </div>
         </main>
         <footer class="footer">
