@@ -143,6 +143,7 @@ p {
   position: absolute;
   left: 50px;
   top: 175px;
+  cursor: pointer;
 }
 
 .img_vale {
@@ -175,6 +176,7 @@ p {
   flex-direction: column;
   position: absolute;
   bottom: 60px;
+  cursor: pointer;
 }
 
 .img_section-2 {
