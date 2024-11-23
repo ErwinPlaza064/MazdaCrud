@@ -15,29 +15,49 @@
         <p>Fecha</p>
       </header>
       <main>
-        <div>
-          <img class="img__perfil" src="../Img/ImgPerfil.png" alt="" />
-          <img class="img__logo" src="../Img/logoMazdaCuadrado.png" alt="" />
-        </div>
-        <div>
-          <img
-            class="img__section-messages"
-            src="../Img/SectionMessages.png"
-            alt=""
-          />
-          <img class="img__message" src="../Img/Img_Message.png" alt="" />
+      
+      <div class="box_perfil">
+        <img class="img_perfil" src="../Img/ImgPerfil.png" alt="ImagenDePerfil">
+        <img class="logo_mazda" src="../Img/logoMazdaCuadrado.png" alt="LogoMazda">
+      </div>
+
+      <div class="box_messages">
+        <img class="img_messages" src="../Img/SectionMessages.png" alt="ImagenMessage">
+      </div>
+
+      <div class="box_container">
+        <div class="section__box">
+        <a href="MenuUsuario.php">
+          <div class="box__images">
+            <img class="img__box" src="../Img/Nota_Prestamo.png" />
+          </div>
+        </a>  
+          <div class="box__images">
+            <img class="img__box" src="../Img/Sku_Herramienta.png" />
+          </div>
+          <div class="box__images">
+            <img class="img__box" src="../Img/Inventario.png" />
+          </div>
         </div>
         <div class="section__box">
-          <a href="MenuUsuario.php">
-            <img class="img__box" src="../Img/Nota_Prestamo.png" />
-          </a>
-          <img class="img__box" src="../Img/Sku_Herramienta.png" />
-          <img class="img__box" src="../Img/Inventario.png" />
-          <img class="img__box" src="../Img/Devoluciones_Prestamos.png" />
-          <img class="img__box" src="../Img/Herramientas_Stack.png" />
-          <img class="img__box" src="../Img/Busqueda_Sku.png" />
-          <img class="img__box img-codigo" src="../Img/Alto_Codigo.png" />
+          <div class="box__images">
+            <img class="img__box" src="../Img/Devoluciones_Prestamos.png" />
+          </div>
+          <div class="box__images">
+            <img class="img__box" src="../Img/Herramientas_Stack.png" />
+          </div>
+          <div class="box__images">
+            <img class="img__box" src="../Img/Busqueda_Sku.png" />
+          </div>
         </div>
+        <div class="section__box">
+          <div class="box__images">
+            <img class="img__box" src="../Img/Alto_Codigo.png" />
+          </div>
+        </div>
+      </div>
+        
+       
       </main>
       <footer class="footer">
             <p  class="footer__mensajeria">Mensajeria:</p>

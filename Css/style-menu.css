@@ -4,7 +4,7 @@
   --backgrund-border: #d9d9d9;
 }
 
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,7 +24,6 @@ header {
   display: flex;
   justify-content: space-between;
 }
-
 p {
   margin: 0 200px;
 }
@@ -36,46 +35,67 @@ main {
   background-position: right;
 }
 
-.img__perfil {
-  width: 120px;
-  position: relative;
-  left: 40px;
-  bottom: 50px;
-}
-
-.img__logo {
-  width: 180px;
-  position: relative;
+.box_perfil {
+  display: flex;
+  justify-content: start;
+  position: absolute;
+  top: 20px;
   left: 60px;
-  bottom: 55px;
 }
 
-.img__section-messages {
-  width: 400px;
-  position: relative;
-  left: 0;
-  bottom: 20px;
-}
-
-.img__message {
+.img_perfil {
   width: 100px;
-  position: relative;
-  bottom: 10px;
+}
+
+.logo_mazda {
+  position: absolute;
+  top: 50px;
+  left: 120px;
+  width: 200px;
+}
+
+.box_messages {
+  display: flex;
+  justify-content: end;
+  padding: 30px;
+}
+
+.img_messages {
+  width: 300px;
+  position: absolute;
+  top: 130px;
+  left: 0;
+}
+
+.box_container {
+  padding: 30px 0;
 }
 
 .section__box {
-  position: absolute;
-  bottom: 100px;
-  left: 700px;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.box__images {
+  display: flex;
+  width: 200px;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover {
+  transform: scale(1.1);
 }
 
 .img__box {
-  width: 250px;
-}
-.section__box .img-codigo {
-  position: relative;
-  left: 509px;
+  width: 200px;
 }
 
 .footer {
@@ -103,4 +123,54 @@ main {
 .footer .footer__ip {
   text-align: right;
   margin-right: 40px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .form__input {
+    width: 80%;
+  }
+
+  .btn {
+    width: 80%;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer__server,
+  .footer__status,
+  .footer__ip {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 20px;
+  }
+  main {
+    background-size: 90%;
+  }
+
+  .form__input {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 12px;
+    width: 80%;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .footer__server,
+  .footer__status,
+  .footer__ip {
+    font-size: 12px;
+  }
 }
