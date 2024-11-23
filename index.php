@@ -11,12 +11,14 @@
         <div class="container">
           <header></header>
           <main>
-          <form class="form" action="Config/login.php" method="POST">
-            <input class="form__input" type="text" name="username" placeholder="Usuario">
-            <input class="form__input" type="password" name="password" placeholder="Contraseña">
-            <button class="btn" type="submit">Ingresar</button>
-            <?php include 'Php/Message.php'?>
-          </form>
+            <div class="box_form">
+              <form class="form" action="Config/login.php" method="POST">
+                <input class="form__input" type="text" name="username" placeholder="Usuario">
+                <input class="form__input" type="password" name="password" placeholder="Contraseña">
+                <button class="btn" type="submit">Ingresar</button>
+                <?php include 'Php/Message.php'?>
+              </form>
+           </div>
           
           </main>
           <footer class="footer">
