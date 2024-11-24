@@ -57,9 +57,13 @@ p {
   margin: 0 200px;
 }
 
+.container_form {
+  display: flex;
+  justify-content: end;
+}
+
 .form {
-  width: 950px;
-  margin-left: 570px;
+  max-width: 800px;
 }
 
 .Form_Empleado {
@@ -93,9 +97,13 @@ p {
   background-color: #fff;
 }
 
+.box_add_button {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+}
+
 .add_button {
-  margin-left: 300px;
-  grid-column: span 2;
   padding: 10px;
   background-color: var(--background-button);
   color: #fff;
@@ -109,12 +117,17 @@ p {
   background-color: #1a82c3;
 }
 
+.container_table {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
 .custom-table {
-  width: 850px;
+  max-width: 800px;
   height: 200px;
   margin: 20px 0;
   border-collapse: collapse;
-  margin-left: 570px;
 }
 
 .custom-table th,
@@ -174,9 +187,9 @@ p {
 .box_section_2 {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  bottom: 60px;
+  position: relative;
   cursor: pointer;
+  bottom: 300px;
 }
 
 .img_section-2 {

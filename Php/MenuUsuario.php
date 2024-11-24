@@ -27,6 +27,7 @@
           <img class="img__logo" src="../Img/logoMazdaCuadrado.png" alt="" />
         </div>
         <?php include 'Message.php'?>
+            <div class="container_form">
                 <form action="Guardar_Prestamo.php" method="POST" class="form">
                     <div class="Form_Empleado">
                     <input name="nombre_empleado" type="text" placeholder="Nombre Empleado" class="form_select_empleado" required>
@@ -40,8 +41,12 @@
                     </select>
                     <input name="descripcion" type="text" placeholder="Descripción Herramienta" class="form_input">
                     <input name="cantidad" type="number" placeholder="Cantidad" class="form_input" required>
+                    <div class="box_add_button">
                     <button type="submit" class="add_button">+ Agregar</button>
+                    </div>
                 </form>
+            </div>
+            <div class="container_table">
                 <table class="custom-table">
                 <thead>
                     <tr>
@@ -71,6 +76,7 @@
                     ?>
                 </tbody>
             </table>
+            </div>
                 <div class="box_vale">
                     <img src="../Img/NuevoVale.png" class="img_vale">
                     <button class="btn_vale"><img class="lupa" src="../Img/lupa.png"><span class="span_vale">Search</span></button>
