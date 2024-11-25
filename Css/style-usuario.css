@@ -190,6 +190,7 @@ p {
   position: relative;
   cursor: pointer;
   bottom: 300px;
+  width: 300px;
 }
 
 .img_section-2 {

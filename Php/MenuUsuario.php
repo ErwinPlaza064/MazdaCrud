@@ -42,7 +42,7 @@
                     <input name="descripcion" type="text" placeholder="Descripción Herramienta" class="form_input">
                     <input name="cantidad" type="number" placeholder="Cantidad" class="form_input" required>
                     <div class="box_add_button">
-                    <button type="submit" class="add_button">+ Agregar</button>
+                    <button type="submit" value="Submit" class="add_button">+ Agregar</button>
                     </div>
                 </form>
             </div>
