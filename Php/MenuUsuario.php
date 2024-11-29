@@ -12,8 +12,8 @@
     <div class="contenedor">
         <header>
             <p>Usuario: <span style="color:#13fa03;"><?php echo htmlspecialchars($usuario); ?></span></p>
-            <p>Fecha</p>
-        </header>
+            <p>Fecha: <span style="color:#13fa03;" id="fecha"></span></p>    
+            </header>
         <main>
         <div class="section_crud">
             <img class="img_crud" src="../Img/Img_Edit.png" alt="Editar" data-bs-toggle="modal" data-bs-target="#seleccionarPrestamoModal" data-action="Editar">
@@ -98,5 +98,6 @@
     <script src="../Js/refresh.js"></script>
     <script src="../Js/script.js"></script>
     <script src="../Boostrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../Js/date.js"></script>
 </body>
 </html>

@@ -12,7 +12,7 @@
     <div class="container">
       <header>
       <p>Usuario: <span style="color:#13fa03;"><?php echo htmlspecialchars($usuario); ?></span></p>
-        <p>Fecha</p>
+      <p>Fecha: <span style="color:#13fa03;" id="fecha"></span></p>    
       </header>
       <main>
       
@@ -66,5 +66,7 @@
             <p class="footer__ip">Ip:<span style="color:#13fa03;"> <?php echo $local_ip; ?></span></p>
       </footer>
     </div>
+
+    <script src="../Js/date.js"></script>
   </body>
 </html>
