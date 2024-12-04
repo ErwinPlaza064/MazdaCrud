@@ -14,11 +14,11 @@ require 'config.php';
 $server_name = gethostname();
 
 function getActiveIP() {
-    $interfaces = shell_exec('ip addr show');
-    if (preg_match('/inet\s+((?:\d{1,3}\.){3}\d{1,3})\/\d+\s+scope\s+(global|link)/', $interfaces, $matches)) {
-        return $matches[1]; // Devuelve la IP activa
+    $interfaces = shell_exec('ip addr show wlp58s0');
+    if (preg_match('/inet\s+(\d+\.\d+\.\d+\.\d+)/', $interfaces, $matches)) {
+        return $matches[1]; // Devuelve la IP de la interfaz
     }
-    return '127.0.0.1'; // Predeterminado al loopback
+    return '127.0.0.1'; // Si no encuentra la IP, devuelve 127.0.0.1 como predeterminado
 }
 
 $local_ip = getActiveIP();
