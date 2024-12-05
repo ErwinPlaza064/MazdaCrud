@@ -26,7 +26,6 @@
           <img class="img__perfil" src="../Img/ImgPerfil.png" alt="" />
           <img class="img__logo" src="../Img/logoMazdaCuadrado.png" alt="" />
         </div>
-        <?php include 'Message.php'?>
             <div class="container_form">
                 <form action="Guardar_Prestamo.php" method="POST" class="form">
                     <div class="Form_Empleado">
@@ -43,8 +42,12 @@
                     <input name="cantidad" type="number" placeholder="Cantidad" class="form_input" required>
                     <div class="box_add_button">
                     <button type="submit" value="Submit" class="add_button">+ Agregar</button>
+                    
                     </div>
+                    <span>        <?php include 'Message.php'?>
+                    </span>
                 </form>
+               
             </div>
             <div class="container_table">
                 <table class="custom-table">
@@ -75,16 +78,20 @@
                     }
                     ?>
                 </tbody>
+               
             </table>
             </div>
+            
                 <div class="box_vale">
                     <img src="../Img/NuevoVale.png" class="img_vale">
                     <button class="btn_vale"><img class="lupa" src="../Img/lupa.png"><span class="span_vale">Search</span></button>
                 </div>
+
                 <div class="box_section_2">
                     <img class="img_section-2" src="../Img/GuardarVale.png" alt="">
                     <img id="imprimirVale" class="img_section-2" src="../Img/ImprimirVale.png">
                 </div>
+                
         </main>
         <footer class="footer">
             <p class="footer__mensajeria">Mensajeria:</p>

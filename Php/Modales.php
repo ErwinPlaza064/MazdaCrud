@@ -1,3 +1,5 @@
+ 
+ 
  <!-- Modal para seleccionar el préstamo a editar -->
  <div class="modal fade" id="seleccionarPrestamoModal" tabindex="-1" aria-labelledby="seleccionarPrestamoLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -96,18 +98,24 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="agregarEmpleadoModalLabel">Agregar Nombre de Empleado</h5>
+        <div class="modal-body">
+        <h5>¿Estás seguro de guardar el préstamo?</h5>
+            </div>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <!-- Formulario para agregar el nombre del empleado -->
-                <form action="Guardar_Empleado.php" method="POST">
-                    <div class="mb-3">
-                        <label for="nombre_empleado" class="form-label">Nombre del Empleado</label>
-                        <input name="nombre_empleado" type="text" id="nombre_empleado" class="form-control" placeholder="Ingrese el nombre del empleado" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Agregar Empleado</button>
-                </form>
+            <form action="Guardar_Prestamo.php" method="POST">
+                <input type="hidden" name="nombre_empleado" id="nombre_empleado" value="">
+                <input type="hidden" name="numero_folio" id="numero_folio" value="">
+                <input type="hidden" name="fecha_prestamo" id="fecha_prestamo" value="">
+                <input type="hidden" name="fecha_entrega" id="fecha_entrega" value="">
+                <input type="hidden" name="entregado" id="entregado" value="">
+                <input type="hidden" name="descripcion" id="descripcion" value="">
+                <input type="hidden" name="cantidad" id="cantidad" value="">
+
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </form>
             </div>
         </div>
     </div>
