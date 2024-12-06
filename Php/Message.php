@@ -10,3 +10,9 @@
         echo '<p style="color: green; text-align: center; margin-right: 100px;">' . htmlspecialchars($_SESSION['delate_message']) . '</p>';
         unset($_SESSION['delate_message']);
     }
+
+    if (isset($_SESSION['message'])) 
+    {
+        echo '<p style="color: green; text-align: center; margin-right: 100px;">' . htmlspecialchars($_SESSION['message']) . '</p>';
+        unset($_SESSION['message']);
+    }

@@ -1,6 +1,3 @@
- 
- 
- <!-- Modal para seleccionar el préstamo a editar -->
  <div class="modal fade" id="seleccionarPrestamoModal" tabindex="-1" aria-labelledby="seleccionarPrestamoLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -36,7 +33,6 @@
         </div>
     </div>
     
-    <!-- Modal Eliminar -->
         <div class="modal fade" id="eliminaModal" tabindex="-1" aria-labelledby="eliminaModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -93,30 +89,26 @@
     </div>
 </div>
 
-<!-- Modal para agregar un nuevo empleado -->
+<!-- Modal -->
 <div class="modal fade" id="agregarModal" tabindex="-1" aria-labelledby="agregarModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-        <div class="modal-body">
-        <h5>¿Estás seguro de guardar el préstamo?</h5>
-            </div>
+                <h2 class="text-center" id="agregarModalLabel">¿Estás seguro de guardar el préstamo?</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-            <form action="Guardar_Prestamo.php" method="POST">
-                <input type="hidden" name="nombre_empleado" id="nombre_empleado" value="">
-                <input type="hidden" name="numero_folio" id="numero_folio" value="">
-                <input type="hidden" name="fecha_prestamo" id="fecha_prestamo" value="">
-                <input type="hidden" name="fecha_entrega" id="fecha_entrega" value="">
-                <input type="hidden" name="entregado" id="entregado" value="">
-                <input type="hidden" name="descripcion" id="descripcion" value="">
-                <input type="hidden" name="cantidad" id="cantidad" value="">
-
-                <button type="submit" class="btn btn-primary">Guardar</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </form>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="confirmarGuardar">Confirmar</button>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    document.getElementById('confirmarGuardar').addEventListener('click', function () {
+    // Envía el formulario al hacer clic en el botón "Confirmar"
+    document.querySelector('form').submit();
+});
+
+</script>

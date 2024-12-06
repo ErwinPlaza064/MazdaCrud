@@ -47,7 +47,6 @@
                     <span>        <?php include 'Message.php'?>
                     </span>
                 </form>
-               
             </div>
             <div class="container_table">
                 <table class="custom-table">
